@@ -31,6 +31,26 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: Text('$counter', style: const TextStyle(fontSize: 80)),
       ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          FloatingActionButton(
+            heroTag: 'btn1',
+            onPressed: _decrement,
+            child: const Icon(Icons.remove),
+          ),
+          FloatingActionButton(
+            heroTag: 'btn2',
+            onPressed: _reset,
+            child: const Icon(Icons.refresh),
+          ),
+          FloatingActionButton(
+            heroTag: 'btn3',
+            onPressed: _increment,
+            child: const Icon(Icons.add),
+          ),
+        ],
+      ),
     );
   }
 }
