@@ -8,7 +8,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  
+  // funcon par los botones 
   int counter = 0;
 
   void _increment() {
@@ -45,14 +45,14 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: const Icon(
               Icons.more_vert, 
               color: Colors.white, 
-              size: 28,
+              size: 30,
             ),
             onPressed: () {
               
               Navigator.pushNamed(context, '/info');
             },
           ),
-          const SizedBox(width: 8), 
+          const SizedBox(width: 7), 
         ],
       ),
 
