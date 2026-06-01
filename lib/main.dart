@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Quita la rayita roja de "Debug"
+      debugShowCheckedModeBanner: false, 
       title: 'Contador de Almas',
-      initialRoute: '/', // Le dice que inicie en la ruta principal
-      routes: AppRoutes.routes, // Llama a tu archivo de rutas
+      initialRoute: '/', 
+      routes: AppRoutes.routes, 
     );
   }
 }
